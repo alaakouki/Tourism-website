@@ -1,0 +1,103 @@
+:root {
+    --gray: #ebebeb;
+    --orange: #ff6700;
+    --light-orange: #fca311;
+    --blue: #004e98;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 16px;
+
+}
+
+header {
+    display: flex;
+    background-color: var(--blue);
+    color: var(--gray);
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+li>a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+li > a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: var(--gray);
+    color: var(--blue);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.Europe {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+    justify-content: center;
+    border: 1px dotted var(--light-orange);
+    /*margin: 2px;*/
+}
+
+.Europe h2 {
+
+    border: 2px solid var(--light-orange);
+    border-radius: 2px;
+    width: 200px;
+    text-align: center;
+
+}
+
+.Europe h2:hover {
+    background-color: var(--blue);
+    color: var(--gray);
+    border-color: var(--blue);
+    cursor: pointer;
+}
+
+.Europe>img {
+
+    width: 300px;
+    height: 225px;
+}
+
+
+/*
+
+img[alt~="Greece"] {
+    position: absolute;
+    clip: rect(0px,300px,200px,0px);
+}
+
+*/
+
+
+footer {
+    display: flex;
+    background-color: var(--blue);
+    color: var(--gray);
+    height: 50px;
+    justify-content: center;
+
+}
